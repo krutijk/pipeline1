@@ -25,14 +25,14 @@ pipeline {
         }
         stage('Four') {
                 parallel {
-                        stage('Unit Test') {
+                        stage('Four A') {
                                 steps{
-                                        echo "Running the unit test..."
+                                        echo "Four A running"
                                 }
                         }
-                        stage('Integration test') {
+                        stage('Four B') {
 				steps {
-					echo 'Running the integration test..'
+					echo 'Four B running'
 				}
                                
 			}  }
